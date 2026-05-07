@@ -22,22 +22,16 @@ function Hero() {
     <section className="relative min-h-screen flex flex-col items-center justify-center px-6 pt-24 pb-16 overflow-hidden">
       <div className="absolute inset-0 glow-eclipse pointer-events-none" />
       <div className="relative w-full max-w-6xl flex flex-col items-center">
-        <div className="relative w-full h-[420px] flex items-center justify-center">
-          <div className="absolute inset-0 flex items-center justify-center overflow-hidden">
-            <div className="relative whitespace-nowrap text-[120px] md:text-[200px] font-semibold tracking-tight select-none leading-none">
-              <span className="absolute inset-0 text-red-500/40 blur-[1px]" style={{ transform: "translateX(-3px)" }}>Moonshot AI&nbsp;&nbsp;Moonshot AI</span>
-              <span className="absolute inset-0 text-cyan-400/40 blur-[1px]" style={{ transform: "translateX(3px)" }}>Moonshot AI&nbsp;&nbsp;Moonshot AI</span>
-              <span className="relative text-white/40 blur-[0.5px]">Moonshot AI&nbsp;&nbsp;Moonshot AI</span>
+        <div className="relative w-full h-[420px] flex items-center justify-center scanlines overflow-hidden">
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div className="glitch-stage whitespace-nowrap text-[120px] md:text-[200px] font-semibold tracking-tight leading-none select-none">
+              <span className="layer layer-r">Moonshot AI&nbsp;&nbsp;Moonshot AI</span>
+              <span className="layer layer-b">Moonshot AI&nbsp;&nbsp;Moonshot AI</span>
+              <span className="relative text-white/85">Moonshot AI&nbsp;&nbsp;Moonshot AI</span>
+              <span className="layer layer-slice">Moonshot AI&nbsp;&nbsp;Moonshot AI</span>
             </div>
           </div>
-          <img
-            src={eclipse}
-            alt="Solar eclipse"
-            width={600}
-            height={600}
-            className="relative z-10 w-[420px] h-[420px] object-cover rounded-full"
-            style={{ maskImage: "radial-gradient(circle, black 40%, transparent 70%)", WebkitMaskImage: "radial-gradient(circle, black 40%, transparent 70%)" }}
-          />
+          <div className="relative z-10 w-[360px] h-[360px] rounded-full bg-black shadow-[0_0_120px_40px_rgba(255,255,255,0.35),inset_0_0_60px_rgba(255,255,255,0.05)]" />
         </div>
         <h1 className="mt-12 text-2xl md:text-4xl font-light text-foreground/90 text-center tracking-tight">
           Seeking the optimal conversion from energy to intelligence
