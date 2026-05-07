@@ -24,8 +24,10 @@ function Hero() {
       <div className="relative w-full max-w-6xl flex flex-col items-center">
         <div className="relative w-full h-[420px] flex items-center justify-center">
           <div className="absolute inset-0 flex items-center justify-center overflow-hidden">
-            <div className="whitespace-nowrap text-[120px] md:text-[180px] font-semibold tracking-tight text-white/20 blur-[2px] select-none">
-              Moonshot AI&nbsp;&nbsp;Moonshot AI
+            <div className="relative whitespace-nowrap text-[120px] md:text-[200px] font-semibold tracking-tight select-none leading-none">
+              <span className="absolute inset-0 text-red-500/40 blur-[1px]" style={{ transform: "translateX(-3px)" }}>Moonshot AI&nbsp;&nbsp;Moonshot AI</span>
+              <span className="absolute inset-0 text-cyan-400/40 blur-[1px]" style={{ transform: "translateX(3px)" }}>Moonshot AI&nbsp;&nbsp;Moonshot AI</span>
+              <span className="relative text-white/40 blur-[0.5px]">Moonshot AI&nbsp;&nbsp;Moonshot AI</span>
             </div>
           </div>
           <img
